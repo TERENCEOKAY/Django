@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>META Display</title>
+</head>
+<body>
+    <h1 align="center">欢迎来到 TERENCE 的世界</h1>
+    <table>
+        {% for k, v in values %}
+            <tr>
+                <td>{{k}}</td><td>{{v}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <p>This page is at {{request.get_host}}/{{request.path}}</p>
+
+</body>
+</html>
