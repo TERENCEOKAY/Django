@@ -1,0 +1,8 @@
+#!usr/bin/env python3
+#-*- coding:utf-8 -*-
+#author:Terence
+
+from django.conf.urls.defaults import *
+import views
+
+urlpatterns = patterns('', (r'^latest/$', views.latest.books), )
